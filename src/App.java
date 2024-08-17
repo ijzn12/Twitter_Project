@@ -5,23 +5,32 @@ public class App {
         // Iniciar cronómetro
         long startTime = System.currentTimeMillis();
 
-        String k, j = " ", u;
+        String k, j = " ", u, apellido;
         int edad;
         Scanner sc = new Scanner(System.in);
+
         System.out.println("Ingresar un nombre");
         k = sc.next();
+
+        System.out.println("Ingresar un apellido");
+        apellido = sc.next(); // Solicitar el apellido
+
         System.out.println("Ingresar edad ");
         edad = sc.nextInt();
+
         System.out.println("Ingresar una clave");
         u = sc.next();
+
         System.out.println("Presionar enter ");
         sc.nextLine();
+
         if (k.equalsIgnoreCase("Jklx")) {
             j = "gay";
         } else {
             j = "hombre";
         }
-        System.out.println("El nombre es: " + k);
+
+        System.out.println("El nombre es: " + k + " " + apellido); // Mostrar el nombre completo
         System.out.println(j);
         System.out.println("la clave: " + u);
         System.out.println("la edad ingresada es: " + edad);
